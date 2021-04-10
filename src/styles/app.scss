@@ -1,0 +1,54 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  gap: 5px;
+  position: relative;
+  overflow-x: hidden;
+
+  h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
+    font-family: 'Architects Daughter', cursive;
+    margin-bottom: 0;
+    animation: bounceInLeft;
+    animation-duration: 2s;
+  }
+
+  .taskPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    border: 1px solid black;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebe9d9;
+    border-radius: 20px;
+    padding: 20px 0;
+    box-shadow: 2px 5px 13px 3px rgba(0, 0, 0, 0.64);
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .App {
+    section {
+      width: 50vw;
+    }
+  }
+}
+
+@import './quote';
+@import './filter';
+@import './form';
+@import './taskList';
+@import './nav';
+@import './calender';

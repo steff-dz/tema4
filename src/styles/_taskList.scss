@@ -1,0 +1,62 @@
+.taskListContainer {
+  width: 90%;
+  min-height: 25vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
+}
+
+.taskContainer {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(36, 35, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px;
+  width: 100%;
+  border-bottom: 3px solid rgb(112, 167, 238);
+  font-family: 'Architects Daughter', cursive;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  li {
+    padding: 0 10px;
+  }
+}
+
+.completedBtn,
+.deleteBtn {
+  font-size: 2.5rem;
+  background-color: #ebe9d9;
+  border: none;
+}
+
+.deleteBtn {
+  color: darkblue;
+  border: none;
+  cursor: pointer;
+}
+
+.taskCompleted {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 700px) {
+  .taskContainer {
+    font-size: 2.5rem;
+  }
+}

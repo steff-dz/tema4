@@ -1,0 +1,35 @@
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  align-items: center;
+  background-color: #ebe9d9;
+  background-color: #333;
+  animation: fadeInLeft;
+  animation-duration: 0.5s;
+
+  .navItem {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 5px;
+  }
+
+  .navItem:hover,
+  .navItem:active {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  nav {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
